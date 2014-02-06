@@ -19,6 +19,10 @@ Router.map(function () {
     });
     // Cotizar
     this.resource('cotizar', function(){
+        this.route('impo');
+        this.route('expo');
+        this.route('domestico');
+        this.route('contenedor');
         this.route('exito');
     });
     // Como funciona
