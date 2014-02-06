@@ -82,7 +82,7 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
         .register {margin-right: 15px; }
         .talk {
             @include bold;
-            background: url(/images/cel.jpg) left no-repeat;
+            background: url(../../assets/images/cel.jpg) left no-repeat;
             padding-left: 35px;
             margin-right: 50px;
             margin-top: 21px;
@@ -135,9 +135,9 @@ footer {
 
 // Index
 #intro-index {
-    background: url(/images/bg-intro.jpg)  bottom center;
+    background: url(../../assets/images/bg-intro.jpg)  bottom center;
     .row  {
-        background: url(/images/cargador-intro.png)  no-repeat bottom right;
+        background: url(../../assets/images/cargador-intro.png)  no-repeat bottom right;
         padding: 3em 0;
     }
     #intro-tools {
@@ -233,15 +233,15 @@ footer {
 }
 
 #beneficios-index {
-    background: url(/images/bg-beneficios.jpg) center bottom;
+    background: url(../../assets/images/bg-beneficios.jpg) center bottom;
     .box {
         padding: 0;
         .cargador, .transportista {
             min-height: 245px;
             padding: 1em 1em 0.1em;
         }
-        .cargador {background:  url(/images/cargador-2.jpg) right bottom no-repeat;}
-        .transportista {background:  url(/images/transportista-2.jpg) right bottom no-repeat;}
+        .cargador {background:  url(../../assets/images/cargador-2.jpg) right bottom no-repeat;}
+        .transportista {background:  url(../../assets/images/transportista-2.jpg) right bottom no-repeat;}
         img {
             margin: 1em 1.5em 1em 1em;
         }
@@ -340,7 +340,7 @@ footer {
 }
 
 .box.contact {
-    background: $white url(/images/call.jpg) no-repeat right bottom;
+    background: $white url(../../assets/images/call.jpg) no-repeat right bottom;
     a {
         @include bold;
         display: block;
@@ -407,8 +407,8 @@ footer {
     padding-right: 8em;
 }
 
-.title-page.cargador {background: url(/images/cargador-como.jpg) no-repeat right top;}
-.title-page.transportista {background: url(/images/transportista-como.jpg) no-repeat right top;}
+.title-page.cargador {background: url(../../assets/images/cargador-como.jpg) no-repeat right top;}
+.title-page.transportista {background: url(../../assets/images/transportista-como.jpg) no-repeat right top;}
 
 .row.como-info {
     margin-bottom: 2em;
@@ -472,7 +472,7 @@ footer {
 }
 
 .box.register {
-    background: $white url(/images/map.jpg) no-repeat center top;
+    background: $white url(../../assets/images/map.jpg) no-repeat center top;
     p {
         color: $primary-color;
         text-align: center;

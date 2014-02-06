@@ -1,0 +1,45 @@
+<div id="content-page">
+    <div  class="row">
+
+    <div id="sidebar" class="large-3 medium-4 columns">
+        <div class="nav-view">
+            <ul>
+                <li>{{#link-to "como_funciona"}}Como funciona{{/link-to}}</li>
+                <ul>
+                    <li>{{#link-to "cargador"}}Cargador{{/link-to}}</li>
+                    <li>{{#link-to "transportista"}}Transportista{{/link-to}}</li>
+                </ul>
+                <li>{{#link-to "ayuda"}}Preguntas Frecuentes{{/link-to}}</li>
+                <li>{{#link-to "contacto"}}Contacto{{/link-to}}</li>
+            </ul>
+        </div>
+
+        <div class="box contact">
+            <div class="margin">
+                {{#link-to "contacto"}}Te ayudamos{{/link-to}}
+                <p>En <b>Tucarga</b> siempre estamos dispuesto a ayudarte, habla con nosotros al 600 500 0606</p>
+            </div>
+        </div>
+    </div> {{! end sidebar }}
+
+    <div id="content-view" class="large-9 medium-8 columns">
+        <div class="title-page">
+            <h3>Como funciona</h3>
+            <h5 class="subheader">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.</h5>
+        </div> {{! end title page}}
+
+        <div class="como flex-video widescreen vimeo">
+          <iframe src="http://player.vimeo.com/video/73246785" width="400" height="225" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+        </div>
+
+        {{render "cargador"}}
+        {{render "transportista"}}
+
+
+    </div> {{! end content view }}
+
+    </div>
+</div> {{! end content page }}

@@ -1,3 +1,65 @@
-<h2 id='title'>Welcome to Ember.js</h2>
+<header class="fixed">
+  <nav id="header" class="top-bar" data-topbar>
+      <ul class="title-area">
+        <li class="name">
+          {{#link-to "index"}}<img src="assets/images/tucarga.jpg" alt="Tu carga">{{/link-to}}
+        </li>
+      </ul>
 
+      <section class="top-bar-section">
+        {{! Right Nav Section }}
+        <ul class="right">
+          <li class="talk">
+              <span>Hablemos</span><br />
+              600 500 0606
+          </li>
+          <li>{{#link-to "cotizar" classNames='button radius create'}}Cotiza aqui{{/link-to}}</li>
+        </ul>
+
+        {{! Left Nav Section }}
+        <ul class="left">
+          <li>{{#link-to "index" classNames="lvl1"}}Inicio{{/link-to}}</li>
+          <li>{{#link-to "directorio" classNames="lvl1"}}Directorio de transporte{{/link-to}}</li>
+          <li>{{#link-to "como_funciona" classNames="lvl1"}}Como funciona{{/link-to}}</li>
+          <li class="has-dropdown">
+                <a href="#" class="false">Sobre Tucarga</a>
+            <ul class="dropdown">
+              <li>{{#link-to "ayuda"}}Preguntas frecuentes{{/link-to}}</li>
+              <li>{{#link-to "contacto"}}Contacto{{/link-to}}</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+  </nav>
+</header>
 {{outlet}}
+
+<footer>
+  <div class="row">
+    <div class="large-2 columns">
+      <ul>
+        <li><strong>{{#link-to "index"}}Inicio{{/link-to}}</strong></li>
+        <li><strong>{{#link-to "directorio"}}Directorio{{/link-to}}</strong></li>
+        <li><strong>{{#link-to "cotizar"}}Cotizar{{/link-to}}</strong></li>
+        <li><strong>{{#link-to "registro"}}Registrarse{{/link-to}}</strong></li>
+      </ul>
+    </div>
+    <div class="large-2 columns">
+      <ul>
+
+      </ul>
+    </div>
+    <div class="large-2 columns">
+        <li>{{#link-to "ayuda"}}Preguntas frecuentes{{/link-to}}</li>
+        <li>{{#link-to "contacto"}}Contacto{{/link-to}}</li>
+      </ul>
+    </div>
+    <div class="large-6 columns">
+      <ul class="right-text">
+        <li>Tucarga S.A.</li>
+        <li>El bosque 500, Santiago Chile</li>
+        <li>contacto@tucarga.cl - +56 2 34546545</li>
+      </ul>
+    </div>
+  </div>
+</footer>
