@@ -19,11 +19,11 @@ Router.map(function () {
     });
     // Cotizar
     this.resource('cotizar', function(){
-        this.route('impo');
-        this.route('expo');
-        this.route('domestico');
-        this.route('contenedor');
-        this.route('exito');
+        this.resource('importacion');
+        this.resource('exportacion');
+        this.resource('domestica');
+        this.resource('contenedor');
+        this.resource('exito');
     });
     // Como funciona
     this.resource('como_funciona', function(){

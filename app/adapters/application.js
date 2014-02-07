@@ -1,8 +1,7 @@
 //App.Store = DS.Store.extend();
-export default DS.FixtureAdapter.extend();
 
 // Fixture
-//App.ApplicationAdapter = DS.FixtureAdapter;
+export default DS.FixtureAdapter.extend();
 
 // Rest ember
 // App.ApplicationAdapter = DS.RESTAdapter.extend({
@@ -10,6 +9,6 @@ export default DS.FixtureAdapter.extend();
 // });
 
 // Rest Django
-// App.ApplicationAdapter = DS.DjangoRESTAdapter.extend({
+// export default DS.DjangoRESTAdapter.extend({
 //    host: 'http://localhost:8000/directory'
 // });

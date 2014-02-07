@@ -1,20 +1,45 @@
 <div id="content-page">
     <div  id="form" class="row">
-        <div class="small-7 small-centered columns">
+        <div class="small-9 small-centered columns">
+            <div id="content-view">
 
-            <div class="title-page">
-                <h3>Te ayudamos a elegir</h3>
+              <div class="title-page">
+                  <h3>Te ayudamos a elegir</h3>
                 <h5 class="subheader">Crea una cotización nosotros nos encargamos del resto</h5>
-            </div> {{! end title page}}
+              </div> {{! end title page}}
 
-            {{input type="text" value=name  placeholder=""}}
-            {{input type="text" value=fecha  placeholder=""}}
-            {{input type="text" value=lugar  placeholder=""}}
+              <div class="row form-layout">
+                  <div class="large-8 columns">
 
-            <button {{action 'saveCotizacion'}} class="button success large-12">
-                Enviar solicitud
-            </button>
+                    <div class="row">
+                        <div class="large-12 columns">
+                            <label>Tipo empresa</label>
+                            <ul class="radiobuttons type">
+                                {{#link-to 'importacion' tagName='li' addClass=''}}Importación{{/link-to}}
+                                {{#link-to 'exportacion' tagName='li' addClass=''}}Exportación{{/link-to}}
+                                {{#link-to 'domestica' tagName='li' addClass=''}}Carga domestica{{/link-to}}
+                                {{#link-to 'contenedor' tagName='li' addClass=''}}Contenedor vacio{{/link-to}}
+                            </ul>
+                        </div>
+                    </div>
 
+                {{outlet}}
+
+                  </div> {{!end form content}}
+                  <div class="large-4 columns">
+                      <div class="why">
+                          <h5>Beneficios de cotizar con nosotros</h5>
+                          <ul>
+                              <li><i class="fi-check"></i>Trabaja con clientes confiables y recomendados</li>
+                              <li><i class="fi-check"></i>Nosotros te avisamos cada ves que tengas una oferta.</li>
+                              <li><i class="fi-check"></i>Aumenta el volumen de carga y retornos vacios.</li>
+                          </ul>
+                      </div>
+                  </div> {{! end why}}
+              </div> {{! end form-layout}}
+
+            </div>{{! end #content-view}}
         </div> {{! end centered}}
-    </div>
+    </div> {{! end #form}}
 </div> {{! end content page }}
+

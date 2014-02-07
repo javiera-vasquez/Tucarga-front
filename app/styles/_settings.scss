@@ -334,14 +334,14 @@ $accordion-content-active-bg-color: #f3f5f5;
 // $include-html-form-classes: $include-html-classes;
 
 // We use this to set the base for lots of form spacing and positioning styles
-// $form-spacing: rem-calc(16);
+$form-spacing: rem-calc(15);
 
 // We use these to style the labels in different ways
-// $form-label-pointer: pointer;
-$form-label-font-size: rem-calc(13);
-// $form-label-font-weight: normal;
-// $form-label-font-color: lighten(#000, 30%);
-// $form-label-bottom-margin: rem-calc(8);
+$form-label-pointer: pointer;
+$form-label-font-size: rem-calc(14);
+$form-label-font-weight: normal;
+$form-label-font-color: lighten(#000, 30%);
+$form-label-bottom-margin: rem-calc(6);
 // $input-font-family: inherit;
 // $input-font-color: rgba(0,0,0,0.75);
 $input-font-size: rem-calc(13);
