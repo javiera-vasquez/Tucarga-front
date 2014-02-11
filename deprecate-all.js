@@ -68,7 +68,7 @@
 // });
 
 // // Registro
-// App.RegistrorRoute = Ember.Route.extend({
+// App.RegistroRoute = Ember.Route.extend({
 //     model: function() {
 //         return this.store.createRecord('registro');
 //     }
